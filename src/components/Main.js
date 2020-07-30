@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
+import { Grid } from '@material-ui/core'
+import Nav from './Nav'
 
 export class Main extends Component {
     render() {
         return (
-            <div>
-                <h1>test</h1>
-            </div>
+            <Grid container direction='column'>
+                <Grid item>
+                    <Nav/>
+                </Grid>
+            </Grid>
         )
     }
 }
